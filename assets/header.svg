@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="330" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="328" rx="23" fill="none" stroke="#30363d"/>
+
+  <circle cx="78" cy="66" r="8" fill="#ff5f56"/>
+  <circle cx="104" cy="66" r="8" fill="#ffbd2e"/>
+  <circle cx="130" cy="66" r="8" fill="#27c93f"/>
+
+  <text x="80" y="145" fill="#8b949e" font-family="monospace" font-size="24">Hi, I'm</text>
+  <text x="80" y="205" fill="url(#accent)" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">m7md-d</text>
+  <text x="80" y="250" fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="26">Exploring low-level systems &amp; security.</text>
+
+  <rect x="700" y="72" width="420" height="190" rx="14" fill="#010409" stroke="#30363d"/>
+  <text x="730" y="110" fill="#7ee787" font-family="monospace" font-size="20">m7md-d@dev:~$ whoami</text>
+  <text x="730" y="148" fill="#8b949e" font-family="monospace" font-size="18">&gt; systems curious</text>
+  <text x="730" y="180" fill="#8b949e" font-family="monospace" font-size="18">&gt; security minded</text>
+  <text x="730" y="212" fill="#8b949e" font-family="monospace" font-size="18">&gt; reverse engineering focused</text>
+  <rect x="730" y="232" width="12" height="22" fill="#3fb950" filter="url(#glow)"/>
+</svg>

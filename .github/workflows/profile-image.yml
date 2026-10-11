@@ -1,0 +1,45 @@
+name: Refresh profile image
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/profile_image.py'
+      - 'tests/test_profile_image.py'
+      - '.github/workflows/profile-image.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-image
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.repository == 'm7md-d/m7md-d'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Verify collection and rendering
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch GitHub data and render local SVGs
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
+        run: python3 scripts/profile_image.py --refresh
+      - name: Save updated images
+        run: |
+          git add assets/header-machine*.svg assets/interests*.svg assets/toolchain*.svg assets/runtime*.svg assets/traces-heading*.svg assets/projects-heading*.svg data/profile.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh profile runtime snapshot'
+          git push origin HEAD:main

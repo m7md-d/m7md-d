@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">m7md-d</title>
+  <desc id="description">Exploring low-level systems and security. Navy ground, precise byte grid shaped as a seven, and a small green marker.</desc>
+  <rect width="1200" height="300" fill="#0B121F"/>
+  <path d="M32 56V32H56M1144 32H1168V56M32 244V268H56M1144 268H1168V244" fill="none" stroke="#34435A" stroke-width="1"/>
+  <path d="M64 68H738" stroke="#253248"/>
+  <rect x="64" y="65" width="6" height="6" fill="#9FEF00"/>
+  <text x="88" y="73" fill="#8799B5" font-family="monospace" font-size="13" letter-spacing="2">SYSTEMS / SECURITY</text>
+  <text x="60" y="159" fill="#F4F4F4" font-family="monospace" font-size="66" font-weight="700" letter-spacing="-3">m7md-d</text>
+  <text x="64" y="207" fill="#A8B6C9" font-family="Arial, Helvetica, sans-serif" font-size="23">Exploring low-level systems &amp; security.</text>
+  <path d="M64 239H738" stroke="#253248"/>
+  <text x="64" y="261" fill="#8799B5" font-family="monospace" font-size="12" letter-spacing="1.2">C / GIT / DOCKER</text>
+  <path d="M805 68V239" stroke="#253248"/>
+  <g fill="#172237" stroke="#40516B" stroke-width="1">
+    <rect x="883" y="78" width="30" height="25"/>
+    <rect x="920" y="78" width="30" height="25"/>
+    <rect x="957" y="78" width="30" height="25"/>
+    <rect x="994" y="78" width="30" height="25"/>
+    <rect x="1031" y="78" width="30" height="25"/>
+    <rect x="1031" y="110" width="30" height="25"/>
+    <rect x="994" y="142" width="30" height="25"/>
+    <rect x="957" y="174" width="30" height="25"/>
+    <rect x="920" y="206" width="30" height="25"/>
+  </g>
+  <rect x="957" y="174" width="30" height="25" fill="#9FEF00"/>
+  <g fill="#8799B5" font-family="monospace" font-size="11">
+    <text x="883" y="61">00</text><text x="920" y="61">01</text><text x="957" y="61">02</text><text x="994" y="61">03</text><text x="1031" y="61">04</text>
+    <text x="1081" y="95">00</text><text x="1081" y="127">10</text><text x="1081" y="159">20</text><text x="1081" y="191">30</text><text x="1081" y="223">40</text>
+  </g>
+</svg>

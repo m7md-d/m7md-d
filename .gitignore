@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local brand studies and previews
+/README.preview.md
+/BRAND-STUDY.md
+/brand-preview.png
+/previews/
