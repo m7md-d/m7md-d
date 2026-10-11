@@ -1,10 +1,11 @@
 {
   "schema": 1,
   "login": "m7md-d",
-  "source": "github-public-calendar",
-  "updatedAt": "2026-10-11T09:37:48+00:00",
+  "source": "github-graphql",
+  "updatedAt": "2026-10-11T17:40:35+00:00",
   "from": "2025-10-12",
   "to": "2026-10-11",
+  "contributions": 1456,
   "days": [
     {
       "date": "2025-10-12",
@@ -1464,15 +1465,37 @@
     },
     {
       "date": "2026-10-11",
-      "count": 2
+      "count": 7
     }
   ],
-  "contributions": 1451,
-  "commits": null,
-  "issues": null,
-  "pullRequests": null,
-  "publicRepos": null,
-  "stars": null,
-  "forks": null,
-  "languages": null
+  "commits": 1042,
+  "issues": 0,
+  "pullRequests": 11,
+  "publicRepos": 44,
+  "stars": 5,
+  "forks": 3,
+  "languages": {
+    "Shell": 12619,
+    "C": 356116,
+    "Assembly": 549,
+    "HTML": 1124244,
+    "Python": 400321,
+    "JavaScript": 160813,
+    "CSS": 562552,
+    "TypeScript": 1433763,
+    "Dockerfile": 10121,
+    "Jupyter Notebook": 5648,
+    "Go": 2369,
+    "Rust": 323,
+    "Dart": 2150932,
+    "Swift": 36971,
+    "Kotlin": 25645,
+    "Ruby": 2992,
+    "Objective-C": 38,
+    "C++": 36581,
+    "CMake": 19788
+  },
+  "languageExcludedRepos": [
+    "T3lm"
+  ]
 }
