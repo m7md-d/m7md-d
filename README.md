@@ -15,7 +15,7 @@
 <p>
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/toolchain-mobile.svg" />
-    <img src="./assets/toolchain.svg" width="100%" alt="Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, radare2, NASM, Podman." />
+    <img src="./assets/toolchain.svg" width="100%" alt="Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, Ghidra, objdump, Nmap, Podman." />
   </picture>
 </p>
 

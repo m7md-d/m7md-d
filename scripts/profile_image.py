@@ -309,12 +309,13 @@ def render_toolchain():
     parts += badge(28, 77, 98, "C", primary=True, size=28)
     for x, width, label in [(28, 148, "Python"), (188, 200, "TypeScript"), (400, 100, "Go")]:
         parts += badge(x, 141, width, label)
-    for x, y, width, label in [(662, 77, 92, "Git"), (766, 77, 134, "Docker"),
-                              (912, 77, 116, "Linux"), (1040, 77, 130, "Bash"),
-                              (662, 141, 92, "GDB"), (766, 141, 134, "radare2"),
-                              (912, 141, 116, "NASM"), (1040, 141, 130, "Podman")]:
+    for x, y, width, label in [(662, 77, 152, "Git"), (826, 77, 160, "Docker"),
+                              (998, 77, 172, "Linux"), (662, 141, 152, "Bash"),
+                              (826, 141, 160, "GDB"), (998, 141, 172, "Ghidra"),
+                              (662, 205, 152, "objdump"), (826, 205, 160, "Nmap"),
+                              (998, 205, 172, "Podman")]:
         parts += badge(x, y, width, label)
-    return svg(218, "Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, radare2, NASM, Podman.",
+    return svg(282, "Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, Ghidra, objdump, Nmap, Podman.",
                "Language and tool badges. C is displayed first. No proficiency ratings.", parts)
 
 
@@ -372,12 +373,13 @@ def render_toolchain_mobile():
     for x, width, label in [(20, 148, "Python"), (180, 200, "TypeScript"), (392, 100, "Go")]:
         parts += badge(x, 141, width, label, size=20)
     parts += [text(20, 241, "Tools", 22), line(20, 260, 580, 260)]
-    for x, y, width, label in [(20, 284, 100, "Git"), (132, 284, 140, "Docker"),
-                              (284, 284, 130, "Linux"), (426, 284, 154, "Bash"),
-                              (20, 348, 100, "GDB"), (132, 348, 140, "radare2"),
-                              (284, 348, 130, "NASM"), (426, 348, 154, "Podman")]:
+    for x, y, width, label in [(20, 284, 176, "Git"), (208, 284, 176, "Docker"),
+                              (396, 284, 184, "Linux"), (20, 348, 176, "Bash"),
+                              (208, 348, 176, "GDB"), (396, 348, 184, "Ghidra"),
+                              (20, 412, 176, "objdump"), (208, 412, 176, "Nmap"),
+                              (396, 412, 184, "Podman")]:
         parts += badge(x, y, width, label, size=20)
-    return svg(418, "Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, radare2, NASM, Podman.",
+    return svg(482, "Languages: C, Python, TypeScript, Go. Tools: Git, Docker, Linux, Bash, GDB, Ghidra, objdump, Nmap, Podman.",
                "Language and tool badges, with C first.", parts, width=600)
 
 
