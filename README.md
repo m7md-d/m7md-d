@@ -45,3 +45,4 @@
 - [E3KS](https://github.com/m7md-d/E3KS) — Replace colours and fonts across Word and PowerPoint files.
 - [Hayn](https://github.com/m7md-d/Hayn) — A free, on-device media toolkit. In development.
 - [COMMANDER](https://github.com/m7md-d/COMMANDER) — GitHub push audits, delivered as satirical military reports to Discord.
+- [DRC](https://github.com/m7md-d/DRC) — Raw disk imaging, USB port monitoring, and file extraction.
